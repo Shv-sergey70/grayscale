@@ -56,7 +56,7 @@ a:hover {
 .header {
     min-height: 600px;
     height: 100vh;
-    background-image: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22,22,22,.5) 75%,#161616 100%), url('/img/bg-header.jpg');
+    background-image: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22,22,22,.5) 75%,#161616 100%), url('/grayscale/img/bg-header.jpg');
     background-size: cover;
 }
 .header h1 {
@@ -94,7 +94,7 @@ a:hover {
 /*4 секция - подписка*/
 .subscription {
     padding: 10rem 0;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), #000), url('/img/bg-subscription.jpg');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), #000), url('/grayscale/img/bg-subscription.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -147,6 +147,10 @@ a:hover {
     }
 }
 @media (max-width: 767px) {
+    /*0 секция - Navigation*/
+    .navigation {
+        background-color: #f8f9fa!important;
+    }
     /*1 секция - Header*/
     .header h1 {
         font-size: 4rem;
