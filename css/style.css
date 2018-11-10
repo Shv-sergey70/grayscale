@@ -1,0 +1,164 @@
+/*Specification*/
+body {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+}
+h4 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    max-width: 30rem;
+}
+a {
+    color: #64a19d;
+}
+a:hover {
+    text-decoration: none;
+    color: #3c6360;
+}
+.form-control {
+    padding: 1.75rem 2rem;
+}
+.btn {
+    font-family: 'Varela Round', sans-serif;
+    box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;
+    padding: 1.25rem 2rem;
+    font-size: 80%;
+    letter-spacing: .15rem;
+}
+.btn-primary {
+    background-color: #64a19d;
+}
+.text-primary {
+    color: #64a19d !important;
+}
+.btn-primary:hover {
+    background-color: #4f837f;
+}
+.bg-black {
+    background-color: #161616;
+}
+.bg-black {
+    background-color: #000;
+}
+.text-twice {
+    font-size: 200%;
+}
+/*0 секция - Navigation*/
+.navigation__brand {
+    letter-spacing: .1rem;
+}
+.navigation__btn {
+    color: #64a19d !important;
+    border-color: #64a19d !important;
+}
+/*1 секция - Header*/
+.header {
+    min-height: 600px;
+    height: 100vh;
+    background-image: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22,22,22,.5) 75%,#161616 100%), url('/img/bg-header.jpg');
+    background-size: cover;
+}
+.header h1 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: .8rem;
+    background: -webkit-linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.header__subtitle {
+    line-height: 2rem;
+}
+/*2 секция - под хедером*/
+.subheader {
+    background: linear-gradient(to bottom,#161616 0,rgba(22,22,22,.9) 75%,rgba(22,22,22,.8) 100%);
+    padding-top: 7rem;
+}
+.subheader__paragraph {
+    max-width: 40rem;
+}
+/*3 секция - проекты*/
+.projects {
+    padding: 10rem 0;
+}
+.project__black-text-block {
+    font-size: 90%;
+}
+.project__hr {
+    width: 30%;
+    height: .2rem;
+    background-color: #64a19d;
+}
+/*4 секция - подписка*/
+.subscription {
+    padding: 10rem 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), #000), url('/img/bg-subscription.jpg');
+    background-position: center;
+    background-size: cover;
+}
+/*5 секция - контакты*/
+.contacts__card {
+    border-bottom: .25rem solid #64a19d;
+}
+.contacts__social {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 50%;
+}
+.contacts__social::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/*6 секция - футер*/
+.footer {
+
+}
+@media (min-width: 992px) {
+    /*0 секция - Navigation*/
+    .bg-lg-transparent {
+        background-color: transparent !important;
+    }
+    /*3 секция - проекты*/
+    .project__white-text-block {
+        border-left: .5rem solid #64a19d;
+    }
+}
+@media (min-width: 768px) {
+    /*0 секция - Navigation*/
+    .navigation__link {
+        padding: 1.5rem !important;
+    }
+    .navigation .nav-item.active {
+        border-bottom: 0.25rem solid #64a19d;
+    }
+}
+@media (max-width: 991px) {
+    /*1 секция - Header*/
+    .header h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+        letter-spacing: .7rem;
+    }
+}
+@media (max-width: 767px) {
+    /*1 секция - Header*/
+    .header h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+        letter-spacing: .6rem;
+    }
+}
+@media (max-width: 575px) {
+    /*1 секция - Header*/
+    .header h1 {
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+        letter-spacing: .5rem;
+    }
+}
